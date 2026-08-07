@@ -20,7 +20,7 @@ Risk assessment model for SMEs using NIST Cybersecurity Framework.
 3. Use presentation for stakeholder briefing
 
 ## Submitted By
-AYUSH KUMAR SRIVASTAVA | UNIVERSITY ROLL NO.- 2500560100071 | BABU BANARASI DAS NORTHERN INDIA INSTITUTE OF TECHNOLOGY
+AYUSH KUMAR SRIVASTAVA | UNIVERSITY ROLL NO.- 2500560100071 | BABU BANARASI DAS NORTHERN INDIA INSTITUTE OF TECHNOLOGY, LUCKNOW
 
 ---
 Naviotech Solution Pvt. Ltd. — Cybersecurity Internship Program | August 2026
