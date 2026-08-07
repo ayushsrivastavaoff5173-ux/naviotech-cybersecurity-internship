@@ -52,7 +52,7 @@ This project develops a structured, repeatable risk assessment model for small a
 - Risk scoring model: Quantitative (Likelihood × Impact)
 
 ## Submitted By
-[YOUR NAME] | Roll: [ROLL NUMBER] | [COLLEGE NAME]
+AYUSH KUMAR SRIVASTAVA | UNIVERSITY ROLL NO.- 2500560100071 | BABU BANARASI DAS NORTHERN INDIA INSTITUTE OF TECHNOLOGY, LUCKNOW
 
 ---
 Naviotech Solution Pvt. Ltd. — Cybersecurity Internship Program | August 2026
