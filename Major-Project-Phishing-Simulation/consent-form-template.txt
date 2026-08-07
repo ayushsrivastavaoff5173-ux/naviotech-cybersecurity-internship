@@ -1,0 +1,153 @@
+============================================================
+INFORMED CONSENT FORM
+Phishing Awareness Simulation Study
+Naviotech Solution Pvt. Ltd. — Cybersecurity Internship
+============================================================
+
+Date: [DATE]
+Study Conducted By: [NAME, CYBERSECURITY TEAM]
+Approved By: [IT SECURITY MANAGER, COMPLIANCE OFFICER]
+
+---
+
+STUDY OVERVIEW
+
+This is an educational cybersecurity awareness study designed to measure and 
+improve employee resilience to phishing attacks. You may receive a fake phishing 
+email as part of this training exercise. The goal is NOT to punish, but to educate.
+
+---
+
+WHAT WILL HAPPEN
+
+Over the next 10 days, you may receive:
+
+1. ONE PHISHING SIMULATION EMAIL that mimics a real phishing attack
+   • The email will ask you to "verify your credentials" or "confirm your password"
+   • It will contain a link to a fake login page
+   • The email will come from a spoofed sender address (e.g., "support@company-internal.test")
+
+2. A FAKE LOGIN PAGE (if you click the link)
+   • It will look like a real company login page
+   • It will ask for your username and password
+   • ⚠️  DO NOT enter your real password — only test credentials if desired
+
+3. DATA COLLECTION (if you interact with the phishing email)
+   • Timestamp of when you clicked the link
+   • Timestamp of any form submission
+   • Your email address (if you submitted the form)
+   • No other personal or financial data will be collected
+
+4. AWARENESS TRAINING (if you fell for the simulation)
+   • If you clicked the link or submitted credentials, you'll be invited to a 
+     remedial training session
+   • This training is educational and supportive, NOT punitive
+   • All staff receive training, regardless of performance
+
+---
+
+WHAT HAPPENS TO YOUR DATA
+
+✓ Your responses will be logged ANONYMOUSLY
+  • Individual results will NOT be publicly shared or used against you
+  • Results will be AGGREGATED (combined across departments/roles)
+  • No individual employee names appear in reports
+
+✓ Your data is CONFIDENTIAL
+  • Only the IT Security team and training coordinator will see individual results
+  • Data will be deleted [TIMELINE, e.g., "within 30 days of study conclusion"]
+
+✓ No REAL passwords or sensitive data will be collected
+  • The fake login page will accept any test username/password
+  • Real credential submissions will NOT be processed or stored
+
+---
+
+YOUR RIGHTS
+
+• You can WITHDRAW at any time: Simply email security@company.com with subject 
+  line "Opt Out of Phishing Simulation"
+• You can ASK QUESTIONS: Contact [TRAINER NAME] at [EMAIL]
+• You will NOT face disciplinary action for falling for the simulation
+• The simulation is ANONYMOUS: Your individual performance will not affect your 
+  employment or evaluations
+
+---
+
+WHAT YOU SHOULD DO IF YOU RECEIVE THE PHISHING EMAIL
+
+DO:
+  ✓ Read the email carefully — look for red flags (urgent language, fake sender, 
+    suspicious links)
+  ✓ If you recognize it as phishing, REPORT it to IT: security@company.com
+  ✓ If you click the link by accident, just close the page — no harm done
+  ✓ If you submit test credentials, don't worry — they won't be used maliciously
+
+DON'T:
+  ✗ Do NOT enter your real password on the fake login page
+  ✗ Do NOT panic or feel embarrassed if you click it
+  ✗ Do NOT forward the phishing email outside the company
+
+---
+
+ETHICS & COMPLIANCE
+
+This study follows ethical guidelines for security awareness training:
+  • Informed consent is collected BEFORE the simulation begins
+  • The simulation is clearly labeled as a training exercise
+  • No real data is compromised or misused
+  • Participation is voluntary
+  • Results are used solely for awareness improvement, not punishment
+
+This study has been approved by [COMPANY IT SECURITY COMMITTEE] and complies with 
+[COMPANY SECURITY POLICY / DATA PRIVACY POLICY].
+
+---
+
+ACKNOWLEDGMENT & CONSENT
+
+I have read and understand the above information. I understand that:
+  • I may receive a phishing simulation email
+  • My responses will be monitored for educational purposes
+  • My data will be kept confidential and aggregated
+  • No real credentials or sensitive data will be collected
+  • I will not face punishment for falling for the simulation
+  • I can withdraw at any time
+
+I voluntarily agree to participate in this phishing awareness simulation study.
+
+---
+
+PARTICIPANT INFORMATION
+
+Name: _________________________________
+
+Email: _________________________________
+
+Department/Team: _______________________
+
+Date Signed: _____________________________
+
+---
+
+RESEARCHER / ADMINISTRATOR
+
+Name: _________________________________
+
+Signature: _______________________________
+
+Date: ____________________________________
+
+Contact for questions: _____________________
+
+---
+
+COPIES
+  • One copy to participant (keep for your records)
+  • One copy to researcher/administrator
+  • One copy to IT Security archive
+
+---
+
+THANK YOU FOR YOUR PARTICIPATION
+Your commitment to cybersecurity awareness strengthens our organization's resilience.

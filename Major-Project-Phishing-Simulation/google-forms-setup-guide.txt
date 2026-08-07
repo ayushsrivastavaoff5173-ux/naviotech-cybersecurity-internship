@@ -1,0 +1,156 @@
+============================================================
+GOOGLE FORMS: MOCK LOGIN PAGE SETUP GUIDE
+(Phishing Simulation Landing Page)
+============================================================
+
+OBJECTIVE:
+Create a Google Form that appears to be a company login page, so when users 
+click the phishing email link, they land on a form that requests credentials.
+The form will:
+  • Mimic a legitimate company login portal (visually)
+  • Collect username/password submissions (for measurement only)
+  • Log all responses with timestamps
+  • Redirect users to the real company portal after submission
+  • Work on mobile and desktop
+
+---
+
+STEP 1: Create a Google Form
+1. Go to forms.google.com
+2. Click "+ Create" → "Blank form"
+3. Title: "Company Portal Login — Verification Required"
+4. Description (optional): "For security reasons, please re-enter your credentials."
+
+---
+
+STEP 2: Configure Form Header
+1. Click the image/header area (top of form)
+2. Upload your company logo or use a brand color (navy/blue matching company branding)
+3. Make it look professional and official
+
+---
+
+STEP 3: Add Form Fields
+
+FIELD 1: Username
+  • Type: "Short answer"
+  • Question: "Email / Username"
+  • Required: YES
+  • Help text: "Enter your company email address"
+
+FIELD 2: Password
+  • Type: "Short answer"
+  • Question: "Password"
+  • Required: YES
+  • Help text: "Enter your password"
+  • (Note: Google Forms doesn't have a native password field, so this appears as 
+    plain text. In a more sophisticated setup, you could use a custom HTML form
+    instead of Google Forms. For this classroom simulation, plain text is acceptable.)
+
+OPTIONAL FIELD 3: 2FA Code
+  • Type: "Short answer"
+  • Question: "2-Factor Authentication Code (if enabled)"
+  • Required: NO
+  • Help text: "If your account has MFA enabled, enter the code from your authenticator app"
+
+---
+
+STEP 4: Configure Response Collection
+1. Click "Settings" (gear icon, top right)
+2. Enable "Collect email addresses" if desired (useful for audit, though we typically 
+   recommend anonymity for psychological safety in simulations)
+3. Disable "Restrict to one response per user" (to allow multiple submissions)
+4. Collect response automatically (Google Forms logs timestamp + IP by default)
+
+---
+
+STEP 5: Add Confirmation Message
+1. Click "Settings" → "Presentation"
+2. Under "Confirmation message", set:
+   Title: "Verification Successful"
+   Message: "Your credentials have been verified. You will be redirected to the 
+   company portal in a few seconds. If not, click here [link to real portal]."
+
+3. (Optional) Add a link to the real company portal
+4. Enable "Show link to submit another response" (for testing purposes)
+
+---
+
+STEP 6: Customize Appearance (Make it Look Official)
+1. Click the paintbrush icon (Customize theme)
+2. Choose a theme color matching your company (e.g., navy blue)
+3. Add your company name as the title
+4. Font: Use a professional font (e.g., "Roboto" or "Open Sans")
+5. Avoid bright colors or playful designs — keep it corporate-looking
+
+---
+
+STEP 7: Get the Form Link
+1. Click "Send" (top right)
+2. Select the "Link" tab
+3. Copy the form URL
+4. This is the link you'll include in the phishing simulation email
+
+Example format: https://forms.gle/XXXXXXXXXXXXXXXX
+
+---
+
+STEP 8: Test the Form Yourself
+1. Open the form link in a new incognito window
+2. Submit a test entry (e.g., "test.user@company.com" / "testpassword123")
+3. Verify:
+   - Form looks professional and login-like
+   - Submission works
+   - Confirmation message appears
+   - Response is logged in Google Forms responses sheet
+
+---
+
+STEP 9: Analyze Responses After Simulation
+1. In Google Forms, click "Responses" tab
+2. View summary statistics:
+   - Number of form submissions
+   - Timestamps of submissions
+   - Any patterns (e.g., all submissions within X hours of email sent)
+3. Export responses to Google Sheets for analysis
+   - Click the Sheets icon (link to Sheets)
+   - A new spreadsheet will be created with all submissions
+
+---
+
+CUSTOMIZATION OPTIONS (If Using HTML Instead of Google Forms):
+If you want an even more realistic experience, you can:
+  1. Create a custom HTML/CSS page that mimics your company's actual login portal
+  2. Use a simple Python/Node.js backend to log submissions
+  3. Host on a free platform (Heroku, Replit, GitHub Pages)
+  4. Example: A static HTML form with a backend service that logs data to a 
+     database or Google Sheet via POST request
+
+Example custom HTML approach (advanced):
+  • Create index.html with company branding + login form
+  • Form submits to a backend endpoint that logs the data
+  • Backend can be a Google Apps Script or cloud function
+  • Redirect user to real portal after submission
+
+---
+
+IMPORTANT ETHICAL REMINDERS:
+  • All participants must have consented BEFORE the form link is sent
+  • Form must be clearly labeled as a "training exercise" in follow-up messaging
+  • Do NOT store or use real credentials in production
+  • Immediately reveal the simulation after monitoring period (7-10 days)
+  • Provide training to anyone who submitted credentials
+  • Aggregate and anonymize all results before sharing reports
+
+---
+
+METRICS TO COLLECT:
+After the simulation ends, analyze:
+  1. Total form submissions (attempted logins)
+  2. Timestamps (when people tried to log in)
+  3. Device type (mobile vs. desktop)
+  4. Browser type
+  5. By department/team (if email list was segmented)
+  6. Correlation with email open rates (if tracked separately)
+
+All this data supports your "Results & Analysis" section in the report.

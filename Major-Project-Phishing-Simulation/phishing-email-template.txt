@@ -1,0 +1,78 @@
+============================================================
+PHISHING SIMULATION EMAIL TEMPLATE
+(For authorized, consented testing only — Ethics-approved)
+============================================================
+
+TO:       [test-group@company.com]
+FROM:     support@company-internal.test
+SUBJECT:  Action Required: Password Expiration Notice (24 hours)
+
+---
+
+Dear Staff,
+
+Your password will expire in 24 hours. To maintain access to company systems,
+please verify your credentials immediately.
+
+⚠️  URGENT ACTION REQUIRED
+
+[CLICK HERE TO VERIFY YOUR CREDENTIALS]
+(Link to: http://your-domain.test/login-verification)
+
+Alternatively, visit: http://your-domain.test/login-verification
+and enter your username and password.
+
+If you do not verify within 24 hours, your account will be locked.
+
+Questions? Contact IT Support: support@company-internal.test
+
+---
+
+IT Security Team
+Naviotech Solution Pvt. Ltd.
+
+---
+
+TRAINING MESSAGE (FOOTER — only revealed after recipient opens/clicks):
+[This is a PHISHING SIMULATION for security awareness training.
+If you clicked this link or attempted to enter your password,
+DO NOT WORRY. No real data has been compromised.
+Please attend the remedial training session scheduled for [DATE].
+For more info, contact: security@company.com]
+
+---
+
+NOTES FOR SIMULATION ADMINISTRATOR:
+
+1. This email uses common phishing tactics:
+   - Urgency ("24 hours")
+   - Authority impersonation ("IT Support")
+   - Legitimate-looking sender domain (spoofed, but recognizable in test environment)
+   - Clear call-to-action (link + manual entry option)
+
+2. The "verification" form is a Google Form styled to look like a login page
+   (see: google-forms-setup-guide.txt)
+
+3. ALL participants should have signed consent forms BEFORE this email is sent.
+
+4. The email footer message is OPTIONAL — use only if you want immediate 
+   feedback during the simulation. Some programs prefer to reveal after 7-10 days
+   for more authentic behavior measurement.
+
+5. If using a real email domain (not spoofed test domain), ensure:
+   - IT Security has approved the simulation
+   - Email headers clearly show it's a test (add X-Test header, etc.)
+   - SPF/DKIM/DMARC records don't trigger false positives in email gateways
+
+6. Track metrics:
+   - Send timestamp
+   - Open timestamp (via web beacon or form access logs)
+   - Click timestamp
+   - Form submission data (username/password attempts)
+   - Any user reports to IT
+
+7. After simulation period (recommend 7 days):
+   - Send all-clear message revealing the test
+   - Provide training resources to anyone who fell for it
+   - Aggregate results anonymously
+   - Conduct follow-up training 1-2 weeks later

@@ -1,0 +1,321 @@
+============================================================
+PHISHING SIMULATION TESTING & EXECUTION GUIDE
+(Step-by-Step Instructions)
+============================================================
+
+OVERVIEW
+This guide walks you through running an ethical, consented phishing awareness 
+simulation. Follow each step carefully to ensure ethical compliance and valid results.
+
+Timeline: 10 days total
+Effort: ~20-30 hours (planning, execution, analysis, training)
+Participants: 40-50 recommended (larger = more statistical confidence)
+
+---
+
+PHASE 1: PLANNING & PREPARATION (Days -7 to -1)
+
+[ ] STEP 1: Get organizational approval
+    • Meet with IT Security Manager and Compliance Officer
+    • Explain the study goals, methodology, and ethical safeguards
+    • Obtain written approval before proceeding
+    • Document approval in project records
+
+[ ] STEP 2: Select participant list
+    • Work with HR/IT to identify test group (recommend: mixed departments, 
+      ~40-50 people)
+    • Avoid: C-suite, external contractors (unless specific permission)
+    • Segmenting by department is useful for identifying high-risk groups
+    • Example groups:
+      - Finance department (8 people)
+      - IT/Security (6 people)
+      - HR (9 people)
+      - Operations (12 people)
+      - Sales (7 people)
+      - Others (remaining staff)
+
+[ ] STEP 3: Prepare materials
+    ✓ Phishing email template (see: phishing-email-template.txt)
+    ✓ Google Form / fake login page (see: google-forms-setup-guide.txt)
+    ✓ Consent form (see: consent-form-template.txt)
+    ✓ Training materials for follow-up (links to resources, videos, etc.)
+    ✓ Communications plan (email sequence, timeline, talking points)
+
+[ ] STEP 4: Set up data tracking
+    • Create a spreadsheet to manually track:
+      - Participant email address
+      - Date consented
+      - Email send date/time
+      - Open timestamp (if trackable)
+      - Click timestamp
+      - Form submission timestamp
+      - Department
+      - Any manual reports to IT
+    • Set up Google Forms response collection (automatic timestamp logging)
+    • Configure email campaign tracking (if using email marketing tool like Mailchimp)
+
+[ ] STEP 5: Create communications timeline
+    • Draft all emails you'll send:
+      1. Consent request email (Day 0)
+      2. Phishing simulation email (Day 1)
+      3. Reminder email (Day 3, if low engagement)
+      4. All-clear email (Day 8, revealing the test)
+      5. Training resources email (Day 9)
+    • Get approval from IT/Compliance before sending
+
+---
+
+PHASE 2: CONSENT COLLECTION (Day 0)
+
+[ ] STEP 6: Send consent request
+    Template email:
+    
+    Subject: Security Awareness Study — Voluntary Participation
+    Body:
+    Dear Team,
+    
+    We are conducting a security awareness study to improve our organization's
+    resilience to phishing attacks. This is a voluntary, educational training 
+    exercise.
+    
+    If you agree to participate, you may receive a test phishing email and be 
+    asked to complete a form. No real data will be compromised.
+    
+    Attached: Informed Consent Form
+    
+    To consent, please:
+    1. Read the attached consent form carefully
+    2. Print and sign it
+    3. Return it to [EMAIL] by [DATE]
+    
+    Questions? Contact [TRAINER NAME] at [EMAIL]
+    
+    Thank you for your commitment to cybersecurity!
+
+[ ] STEP 7: Collect signed consent forms
+    • Set deadline: typically 24-48 hours after consent email
+    • Keep a master list of who has consented
+    • Only send phishing simulation email to consented participants
+    • Document who declined to participate (and exclude from simulation)
+
+[ ] STEP 8: Brief IT/help desk (OPTIONAL but RECOMMENDED)
+    • Inform IT Support that a phishing simulation is happening
+    • If employees report the test email to IT, support should:
+      ✓ Acknowledge it's a training exercise (if email/form makes it clear)
+      ✓ Not flag it as a security incident
+      ✓ Redirect reporter to training coordinator
+    • Prepares IT for potential questions/reports
+
+---
+
+PHASE 3: PHISHING SIMULATION (Days 1-7)
+
+[ ] STEP 9: Send phishing simulation email (Day 1)
+    • Send from spoofed/test address: support@company-internal.test
+    • Subject: "Action Required: Password Expiration Notice (24 hours)"
+    • Body: See phishing-email-template.txt
+    • Include link to Google Form (fake login page)
+    • Send at time when people are likely to be checking email 
+      (e.g., 9-10 AM on a Tuesday/Wednesday)
+    • Log exact send time and recipients
+
+[ ] STEP 10: Monitor responses (Days 2-7)
+    Daily tracking:
+    • Check Google Forms for new submissions (timestamp, IP)
+    • Monitor email platform for open rates / click rates (if available)
+    • Track any manual reports to IT (note: encourage reporting!)
+    • Keep tally in your tracking spreadsheet
+    
+    What to look for:
+    • Email opens: ~70-90% typical
+    • Link clicks: ~40-70% typical
+    • Form submissions: ~20-50% typical
+    • Reports to IT: ~5-10% (these are "security champions" — note for follow-up)
+
+[ ] STEP 11: Send reminder email (Day 3 — OPTIONAL)
+    If you want more data/engagement, send a follow-up reminder:
+    
+    Subject: Friendly Reminder: Password Expiration (24 hours)
+    Body: Similar to original phishing email
+    
+    (Sends should show different email addresses if possible, to test if 
+     people notice the pattern — e.g., first from "support@...", second from 
+     "noreply@...")
+
+[ ] STEP 12: Stop the simulation (Day 7-8)
+    • Stop sending follow-ups
+    • Prepare all-clear message
+    • Export Google Forms responses to spreadsheet
+    • Tally results in your tracking sheet
+    • Identify who needs training (anyone who clicked or submitted)
+
+---
+
+PHASE 4: REVEAL & TRAINING (Days 8-10)
+
+[ ] STEP 13: Send all-clear email (Day 8)
+    Subject: Security Awareness Study Complete — Training Exercise Revealed
+    Body:
+    
+    Dear Team,
+    
+    The phishing email you may have received on [DATE] was a TRAINING EXERCISE.
+    
+    This was NOT a real security threat. No employee credentials have been 
+    compromised or misused.
+    
+    If you clicked the link or entered credentials:
+      ✓ You are NOT in trouble
+      ✓ This is an opportunity to learn
+      ✓ Phishing is effective because it exploits normal human trust
+      ✓ With awareness, you can avoid it in the future
+    
+    TRAINING SESSION (MANDATORY for anyone who fell for the test):
+    Date: [DATE]
+    Time: [TIME]
+    Link: [ZOOM/TEAMS/IN-PERSON]
+    
+    Topics:
+    • How phishing works
+    • How to spot red flags (sender spoofing, urgency, suspicious links)
+    • What to do if you receive a suspicious email
+    • Reporting procedures
+    
+    OPTIONAL RESOURCES (for everyone):
+    • [Link to phishing awareness video]
+    • [Link to email security best practices]
+    • [Link to password manager setup guide]
+    
+    Questions? Contact [TRAINER] at [EMAIL]
+    
+    Thank you for your participation!
+
+[ ] STEP 14: Compile results
+    Create a summary table:
+    
+    Metric                    | Count  | Percentage
+    ---|---|---
+    Total Participants        | 42     | 100%
+    Emails Opened             | 38     | 90.5%
+    Links Clicked             | 28     | 66.7%
+    Form Submissions          | 18     | 42.9%
+    Reported to IT            | 4      | 9.5%
+    No Interaction            | 4      | 9.5%
+    
+    By Department:
+    Department | Staff | Clicks | % | Risk Level
+    ---|---|---|---|---
+    Finance    | 8     | 2      | 25%   | HIGH AWARENESS
+    IT/Sec     | 6     | 0      | 0%    | EXCELLENT
+    HR         | 9     | 4      | 44%   | MODERATE
+    Operations | 12    | 11     | 92%   | HIGH RISK
+    Sales      | 7     | 11     | 100%  | CRITICAL
+
+[ ] STEP 15: Provide training (Days 9-10)
+    MANDATORY for anyone who clicked or submitted:
+    • Duration: 30-45 minutes
+    • Format: Live session (can be recorded)
+    • Content:
+      1. Phishing psychology (why it works)
+      2. Common techniques (urgency, spoofing, credential harvesting)
+      3. Red flag checklist (sender, urgency language, links, attachments)
+      4. Reporting procedure
+      5. Q&A
+    
+    OPTIONAL for everyone:
+    • Recorded training session (if live wasn't attended)
+    • Self-paced email security course
+    • Password manager setup guide
+    • Two-factor authentication implementation guide
+
+[ ] STEP 16: Document lessons learned
+    For your report, include:
+    • What went well
+    • What could be improved next time
+    • Feedback from participants (optional survey)
+    • Recommended follow-up actions:
+      - Department-specific training (especially Sales, Operations)
+      - Implement technical controls (MFA, email filtering)
+      - Repeat simulation in 3-6 months
+      - Build security champion program (recognize the 9.5% who reported)
+
+---
+
+POST-SIMULATION (Week 2+)
+
+[ ] STEP 17: Follow-up survey (optional)
+    Send a brief survey to participants:
+    • Was the training helpful?
+    • What did you learn?
+    • Would you like more training?
+    
+    Use feedback to improve future simulations.
+
+[ ] STEP 18: Schedule repeat simulation
+    Best practice: Run quarterly simulations (every 3 months)
+    • Phishing awareness degrades over time without reinforcement
+    • Quarterly keeps the message fresh
+    • Track improvement over time
+    • Adjust difficulty level (make future ones slightly harder)
+
+[ ] STEP 19: Implement technical controls (recommendation)
+    In parallel with training:
+    • SPF/DKIM/DMARC email authentication (prevents domain spoofing)
+    • Email content filtering (blocks known phishing domains)
+    • Multi-Factor Authentication (MFA) for all critical accounts
+    • Browser security awareness extensions
+    • Web content filtering (blocks known malicious domains)
+
+---
+
+TROUBLESHOOTING
+
+Q: "What if someone reports the simulation email to the help desk?"
+A: Have prepared IT to respond: "This is a security awareness training exercise. 
+   Please see the all-clear email for details. Contact [TRAINER] if questions."
+
+Q: "What if someone gets really upset or feels embarrassed?"
+A: Reinforce that this is training, not punishment. Offer 1-on-1 support.
+   Emphasize: "Phishing is effective because it exploits normal human trust."
+
+Q: "What if I want to do this again?"
+A: Repeat every 3-6 months. Track metrics over time to show improvement.
+   Adjust difficulty/content to keep it fresh.
+
+Q: "Can we use a tool like Gophish instead of Google Forms?"
+A: Yes, more advanced tools (Gophish, KnowBe4, Phishme) automate tracking and 
+   training. Google Forms is simpler and compliant for a student project.
+
+---
+
+TIMELINE SUMMARY
+
+Day -7 to -1: Planning & preparation
+Day 0:        Consent collection
+Day 1:        Phishing email sent
+Days 2-7:     Monitor responses
+Day 8:        Reveal + all-clear email
+Days 9-10:    Mandatory training
+Week 2+:      Follow-up, repeat planning
+
+---
+
+ETHICS CHECKLIST (Before You Start!)
+
+[ ] Written approval from IT Security Manager
+[ ] Written approval from Compliance Officer
+[ ] Consent forms signed by ALL participants before simulation begins
+[ ] Phishing email clearly labeled as training in follow-up messages
+[ ] No real credentials or sensitive data collected
+[ ] Aggregate/anonymize results before sharing
+[ ] Training provided to anyone who fell for the simulation
+[ ] No punitive action taken
+[ ] Participant can opt out at any time
+
+If you can't check all boxes, DO NOT PROCEED with the simulation.
+Ethics is non-negotiable.
+
+---
+
+Questions? Refer to the full Major Project report and supporting documents.
+Good luck, and stay vigilant! 🛡️
