@@ -1,0 +1,77 @@
+version: "3.8"
+
+# Zero Trust Simulation — Minor Project 2
+# Simulates: 3 micro-segmented resource zones (Finance, HR, Engineering),
+# a policy-enforcement gateway (Nginx) that only allows access when the
+# caller presents the correct role, and Keycloak as the enterprise IAM/MFA provider.
+#
+# Run with:  docker compose up -d
+# Stop with: docker compose down
+
+services:
+  # ---------- Identity & Access Management ----------
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0
+    container_name: zt-keycloak
+    command: start-dev
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin123
+    ports:
+      - "8080:8080"
+    networks:
+      - frontend
+
+  # ---------- Micro-segmented resource zones (each on its OWN isolated network) ----------
+  finance-app:
+    image: nginx:alpine
+    container_name: zt-finance-app
+    volumes:
+      - ./segments/finance:/usr/share/nginx/html:ro
+    networks:
+      - seg_finance
+    # NOTE: no port published to host — only the gateway can reach it
+
+  hr-app:
+    image: nginx:alpine
+    container_name: zt-hr-app
+    volumes:
+      - ./segments/hr:/usr/share/nginx/html:ro
+    networks:
+      - seg_hr
+
+  engineering-app:
+    image: nginx:alpine
+    container_name: zt-engineering-app
+    volumes:
+      - ./segments/engineering:/usr/share/nginx/html:ro
+    networks:
+      - seg_engineering
+
+  # ---------- Policy Enforcement Point / Zero Trust Gateway ----------
+  gateway:
+    image: nginx:alpine
+    container_name: zt-gateway
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8081:80"
+    networks:
+      - frontend
+      - seg_finance
+      - seg_hr
+      - seg_engineering
+    depends_on:
+      - finance-app
+      - hr-app
+      - engineering-app
+
+networks:
+  frontend:
+    driver: bridge
+  seg_finance:
+    driver: bridge
+  seg_hr:
+    driver: bridge
+  seg_engineering:
+    driver: bridge
